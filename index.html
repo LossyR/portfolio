@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Portfólio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="descricao">
+        <h1 class="titulo">Natalia Miranda</h1>
+        <span>Desenvolvedora Web Jr</span>
+        <p>Atualmente estou participando no projeto Oracle One da Alura na formação de Front End</p>
+        </section>
+
+        <div class="redesSociais">
+        <a class="redes" href="https://github.com/LossyR">
+        <img src="./src/img/github-logo-face.png" alt="">
+        </a>
+        
+        <a class="redes" href="https://www.linkedin.com/in/natalia-miranda-lossy/">
+            <img src="./src/img/linkedin.png" alt="">
+        </a>
+
+        <a class="redes" href="https://www.instagram.com/natargatis/">
+            <img src="./src/img/instagram (2).png" alt="">
+        </a>
+        </div>
+        
+        <!-- separar aqui  -->
+
+        <section id="sobre" class="sobreMim">
+        <h2 class="subtitulo">Sobre Mim</h2>
+        <p>Comecei na área de tecnologia em 2022 e desde então venho estudando temas diversos como IA, ciência da computação, RA, entre outros. Em geral, gosto de aprender coisas novas e estou sempre em buscar de melhorar minhas habilidades. Atuo como desenvolvedora web e tradutora de inglês freelancer.</p>
+        </section>
+
+        <section id="skills" class="habilidades">
+        <h2 class="subtitulo">Skills</h2>
+        <ul class="habilidades">
+            <li>CSS</li>
+            <li>Html5</li>
+            <li>Javascript</li>
+            <li>Git</li>
+            <li>Github</li>
+        </ul>
+        </section>
+        <!-- separar aqui -->
+
+        <section id="hobbies" class="atividades">
+        <h2 class="subtitulo">Hobbies</h2>
+        <p>Estudo idiomas por conta própria, especificamente inglês e coreano. Também sou apaixonada por jogos e costumo assistir gameplays no youtube ou na twitch. </p>
+        <!-- separar aqui -->
+        </section>
+
+        <section>
+        <h2 class="contato">Contato</h2>
+        <p>Se interessou pelo meu trabalho? Entre em contato comigo pelo formulário abaixo ou pelas minhas redes.</p>
+        <form action="">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="assunto">Assunto</label>
+        <input type="text" name="assunto" id="assunto">
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        <input type="submit" value="Enviar">
+        </form>
+        </section>
+
+        <footer><p>© 2023 All rights reserved</p></footer>
+    </main>
+</body>
+</html>

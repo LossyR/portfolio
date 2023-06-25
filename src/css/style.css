@@ -1,0 +1,90 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    background-color:aqua;
+    display: block;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    max-width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu > li {
+    padding: 20px 0;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: blueviolet;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+.descricao {
+    align-items: center;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+}
+
+.descricao .titulo {
+    font-size: 30px;
+}
+
+.titulo, .subtitulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.redesSociais {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+
+.redes {
+    margin-left: 15px;
+    padding: 10px;
+}
+
+
+}
