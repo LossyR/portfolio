@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -15,10 +16,11 @@ html,body {
 
 body {
     height: 100%;
+    font-family: 'JetBrains Mono', 'Poppins', sans-serif, monospace;
 }
 
 header {
-    background-color:aqua;
+    background-color: #F0F8FF ;
     display: block;
 }
 
@@ -36,6 +38,7 @@ ul {
     margin: auto;
     align-items: center;
     justify-content: space-around;
+    background-color: #F0F8FF;
 }
 
 .menu > li {
@@ -47,7 +50,7 @@ ul {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
-    color: blueviolet;
+    color: purple;
 }
 
 .container {
@@ -59,7 +62,7 @@ ul {
 
 .descricao {
     align-items: center;
-    background-color: aqua;
+    background-color: #F0F8FF;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -67,17 +70,19 @@ ul {
 }
 
 .descricao .titulo {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .titulo, .subtitulo {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Jetbrains Mono";
+    text-align: center;
 }
 
 .redesSociais {
     justify-content: center;
     display: flex;
     width: 100%;
+    background-color: #F0F8FF;
 }
 
 
@@ -86,5 +91,17 @@ ul {
     padding: 10px;
 }
 
+.sobreMim {
+    background-color: aqua;
+    padding: 20px;
 
+.texto {
+    text-align: justify;
+}
+
+.habilidades{
+    background-color: blueviolet;
+}
+
+}
 }
