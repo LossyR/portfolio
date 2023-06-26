@@ -59,6 +59,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
 .descricao {
     align-items: center;
@@ -99,9 +100,17 @@ ul {
     text-align: justify;
 }
 
-.habilidades{
+.atividades {
     background-color: blueviolet;
 }
 
+.educacao {
+    background-color: blueviolet;
 }
+
+.habilidades {
+    background-color: blueviolet;
+}
+
+
 }
