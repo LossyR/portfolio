@@ -178,8 +178,6 @@ ul {
 }
 
 .formulario {
-    display: flex;
-    flex-direction: column;
     width: 40%;
     margin-left: 30%;
     margin-top: 50px;
@@ -187,10 +185,14 @@ ul {
     border-color: rgb(23, 149, 228);
 }
 
-.formulario label {
-    margin-top: 20px;
-}
 
+
+.formulario_campo {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
 
 .rodape {
     text-align: center;

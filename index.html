@@ -91,18 +91,30 @@
         <h2 class="subtitulo">Contato</h2>
         <p class="texto">Se interessou pelo meu trabalho? Entre em contato comigo pelo formulário abaixo ou pelas minhas redes.</p>
         <form class="formulario">
+        <fieldset class="formulario_campo">
         <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" minlength="3" required>
-        <span class="mensagem-Erro"></span>
+        <input type="text" name="nome" id="nome" minlength="3" maxlength="50" required>
+        <span class="mensagem-erro"></span>
+        </fieldset>
+            
+        <fieldset class="formulario_campo">
         <label for="email">Email</label>
         <input type="email" name="email" id="email" minlength="4" required>
-        <span class="mensagem-Erro"></span>
+        <span class="mensagem-erro"></span>
+        </fieldset>
+
+        <fieldset class="formulario_campo">
         <label for="assunto">Assunto</label>
-        <input type="text" name="assunto" id="assunto">
+        <input type="text" name="assunto" id="assunto" maxlength="50" required>
+        <span class="mensagem-erro"></span>
+        </fieldset>
+
+        <fieldset class="formulario_campo">
         <label for="mensagem">Mensagem</label>
         <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
-        <input type="submit" value="Enviar Mensagem">
-        <span class="mensagem-Erro"></span>
+        <input type="submit" value="Enviar Mensagem" maxlength="300">
+        <span class="mensagem-erro"></span>
+        </fieldset>
         </form>
         </section>
 
