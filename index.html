@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/style.css">
+    <script defer src="./script.js" type="module"></script>
     <title>Portfólio</title>
 </head>
 <body>
@@ -41,12 +42,17 @@
         <a class="redes" href="https://www.instagram.com/natargatis/">
             <img src="./src/img/instagram (2).png" alt="logo do instagram">
         </a>
+        <a href="./src/NATALIA MIRANDA.pdf">Currículo</a>
         </div>
         
 
         <section id="sobre" class="sobreMim">
         <h2 class="subtitulo">Sobre Mim</h2>
+        <div class="box">
+            <img src="./src/img/curriculo.jpg" alt="foto de perfil">
         <p class="texto">Brasileira, 21 anos. Comecei na área de tecnologia em 2022 e desde então venho estudando temas diversos como IA, ciência da computação, RA, entre outros. Em geral, gosto de aprender coisas novas e estou sempre em busca de melhorar minhas habilidades. Atuo como desenvolvedora web e tradutora de inglês freelancer.</p>
+        </div>
+
         </section>
 
         
@@ -75,25 +81,28 @@
 
         <section id="projetos" class="experiencia">
         <h2 class="subtitulo">Experiência profissional</h2>
-        <img class="projetoMario" src="./src/img/printMario.png" alt="print de um site do filme oficial do Mario">
-        <button type="button">Deploy</button>
-        <img class="projetoD" src="./src/img/printDecodificador.png" alt="">
-        <button id="decodificador" type="button">Deploy</button>
+        <img class="imgMario" src="./src/img/printMario.png" alt="print de um site do filme oficial do Mario">
+        <a href="https://projeto-mario-h779dcl0g-lossyr.vercel.app"><button class="botao" type="button">Deploy</button></a>
+        <img class="imgDecodificador" src="./src/img/printDecodificador.png" alt="print de um site decodificador de mensagens">
+        <a href="https://lossyr.github.io/sprint1ONE/"><button class="botao" id="decodificador" type="button">Deploy</button></a>
         </section>
 
         <section id="contato" class="secaoForm">
         <h2 class="subtitulo">Contato</h2>
         <p class="texto">Se interessou pelo meu trabalho? Entre em contato comigo pelo formulário abaixo ou pelas minhas redes.</p>
-        <form class="formulario" action="">
+        <form class="formulario">
         <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome">
+        <input type="text" name="nome" id="nome" minlength="3" required>
+        <span class="mensagem-Erro"></span>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" minlength="4" required>
+        <span class="mensagem-Erro"></span>
         <label for="assunto">Assunto</label>
         <input type="text" name="assunto" id="assunto">
         <label for="mensagem">Mensagem</label>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
         <input type="submit" value="Enviar Mensagem">
+        <span class="mensagem-Erro"></span>
         </form>
         </section>
 
